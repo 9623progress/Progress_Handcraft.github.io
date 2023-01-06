@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Progress Handicrafts</title>
+</head>
+<style>
+    .container1 {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+
+        width: fit-content;
+        height: fit-content;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+    .img {
+        height: 150px;
+        width: 150px;
+        /* margin: 2px; */
+
+    }
+</style>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark  ">
+
+        <div class="container-fluid  text-primary-emphasis">
+            <a class="navbar-brand  " href="#"> Progress Handicrafts </a>
+            <button class="navbar-toggler light" type="button" data-bs-toggle="collapse" style="border: 2px solid white;
+            color: white;
+            font-size: smaller;" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">Press </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light " aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="About.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light active" href="Shop.html">Shop </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contact.html">Contacts </a>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 btn-outline-light" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-light ms-1" type="submit">Search</button>
+                </form>
+
+                <div class="mx-2">
+                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- LoginModal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="LoginModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--  SignUp Modal -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="SignUpModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container shadow"><img src="product1.jpg" alt="" class="img"><img src="product2.jpg" alt=""
+            class="img"><img src="Product3.jpg" alt="" class="img"><img src="product4.jpg" alt="" class="img"><img
+            src="product5.jpg" alt="" class="img"><img src="product6.jpg" alt="" class="img"><img src="product7.jpg"
+            alt="" class="img"><img src="product8.jpg" alt="" class="img"><img src="product9.jpg" alt="" class="img">
+        <img src="product11.jpg" alt="" class="img"><img src="product12.jpg" alt="" class="img"><img src="product10.jpg"
+            alt="" class="img"><img src="product14.jpg" alt="" class="img"><img src="product15.jpg" alt=""
+            class="img"><img src="product16.jpg" alt="" class="img"><img src="product17.jpg" alt="" class="img"><img
+            src="product19.jpg" alt="" class="img"><img src="product20.jpg" alt="" class="img">
+        <img src="product21.jpg" alt="" class="img"><img src="product22.jpg" alt="" class="img"><img src="product23.jpg"
+            alt="" class="img"><img src="product24.jpg" alt="" class="img"><img src="product25.jpg" alt=""
+            class="img"><img src="product26.jpg" alt="" class="img">
+    </div>
+
+    <div class="container">
+        <div class="card shadow-sm m-2" style="width: 18rem;">
+            <img src="pottery2.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pottery</h5>
+                <p class="card-text">View more and check Price</p>
+                <a href="#" class="btn btn-primary">Comming soon...</a>
+            </div>
+        </div>
+        <div class="card shadow-sm m-2" style="width: 18rem;">
+            <img src="wollen2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">woolen</h5>
+                <p class="card-text">View more and check Price</p>
+                <a href="#" class="btn btn-primary">Comming soon...</a>
+            </div>
+        </div>
+        <div class="card shadow-sm m-2" style="width: 18rem;">
+            <img src="other.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Other</h5>
+                <p class="card-text">View more and check Price</p>
+                <a href="#" class="btn btn-primary">Comming soon...</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="card-footer text-muted  container1">
+        <p> privacy policy</p>
+        <p> apply terms and condition</p>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
